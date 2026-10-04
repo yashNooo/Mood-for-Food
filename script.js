@@ -1,8 +1,17 @@
 function showFood(mood) {
-    let title = 
-    document.getElementById("food-title");
+    let title = document.getElementById("food-title");
 
     let text = document.getElementById("food-text");
+
+    title.innerText = "Thinking...";
+    text.innerText = "Finding food for your mood...";
+
+   
+
+
+    setTimeout(function() {
+
+    
 
     if(mood == "angry") {
         title.innerText = "Belive Me You Need Something sweet :) ";
@@ -35,6 +44,8 @@ function showFood(mood) {
 
         document.body.style.backgroundColor = "#CE93D8";
     }
+
+}, 1000);
 }
 
 
